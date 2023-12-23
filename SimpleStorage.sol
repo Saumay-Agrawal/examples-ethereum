@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.18;
 
-contract HelloWorld {
+contract SimpleStorage {
 
     uint256 public favoriteNumber;
     uint256[] public listFavoriteNumber;
@@ -18,7 +18,7 @@ contract HelloWorld {
     mapping(string => uint256) public peoplemap;
 
 
-    function store(uint256 _favoriteNumber) public {
+    function store(uint256 _favoriteNumber) public virtual  {
         favoriteNumber = _favoriteNumber;
     }
 
